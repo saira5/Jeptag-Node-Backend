@@ -1,0 +1,5 @@
+{
+
+
+    "mongoDBURI" : "mongodb+srv://saira123:saira123@cluster0-9f5nb.mongodb.net/test?retryWrites=true&w=majority"
+}
