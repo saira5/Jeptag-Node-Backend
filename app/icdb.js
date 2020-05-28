@@ -24,8 +24,8 @@ function sendProductVerification(result){
       let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         auth: {
-          user: 'jeptags@gmail.com', 
-		  pass: 'Tvn@1970@1971' 
+          user: '', 
+		  pass: '' 
 		  
 
         }
@@ -33,8 +33,8 @@ function sendProductVerification(result){
   
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: '"Best Sky America" <jeptags@gmail.com>', // sender address
-        to: "jeptags@gmail.com", // list of receivers
+        from: '"Best Sky America" <>', // sender address
+        to: "", // list of receivers
         subject: "Product Activation! ✔", // Subject line
         html: `<h1>Hello  </h1><p> This product ${result.name} need to be activated<br>
     

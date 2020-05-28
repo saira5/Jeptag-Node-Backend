@@ -14,14 +14,14 @@ function sendNewUserEmail(user){
       let transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         auth: {
-          user: 'jeptags@gmail.com', 
-          pass: 'Tvn@1970@1971' 
+          user: '', 
+          pass: '' 
         }
       });
   
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: '"Best Sky America" <jeptags@gmail.com>', // sender address
+        from: '"Best Sky America" <>', // sender address
         to: user.email, // list of receivers
         subject: "Change Password ! ✔", // Subject line
         html: `<h1>Hello ${user.first_name} </h1><p> It looks like you requested to reset your password.<br>
